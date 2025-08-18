@@ -1,14 +1,16 @@
 import React, { useState, useRef } from 'react';
+import { useRouter } from 'expo-router';
 import { View, Text, TextInput, Pressable, StyleSheet, Animated, Easing } from 'react-native';
 
 const Index = () => {
+  const router = useRouter();
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
-    username: '',
-    password: '',
-    career: ''
+    nombreUsuario: '',
+    contrasenia: '',
+    carrera: ''
   });
-  
+
   const fadeAnim = useRef(new Animated.Value(1)).current;
   const slideAnim = useRef(new Animated.Value(0)).current;
 
@@ -28,7 +30,7 @@ const Index = () => {
       })
     ]).start(() => {
       setIsLogin(!isLogin);
-      
+
       Animated.parallel([
         Animated.timing(fadeAnim, {
           toValue: 1,
@@ -53,18 +55,57 @@ const Index = () => {
     });
   };
 
-  const IniciarSesion  = () =>{
-    if(formData.username == '' || formData.password == ''){
+  const IniciarSesion = async () => {
+    if (formData.nombreUsuario == '' || formData.contrasenia == '') {
       alert("Campos Vacios. Rellene los campos para continuar")
       return
     }
-    alert("Esta haciendo un inicio de sesion")
+    try {
+      const result = await fetch("http://127.0.0.1:3000/api/usuario/IniciarSesion", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+      const data = await result.json();
+
+      if (data.success) {
+        router.push('/home');
+      } else {
+        alert(data.message || "Error al iniciar sesión");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Ocurrió un error al conectar con el servidor");
+    }
+  }
+
+  const Registrarse = async () => {
+    if (formData.nombreUsuario == '' || formData.contrasenia == '' || formData.carrera == '') {
+      alert("Campos Vacios. Rellene los campos para continuar")
+      return
+    }
+    const result = await fetch("http://127.0.0.1:3000/api/usuario/crearUsuario", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    })
+    const data = await result.json();
+    if (data.success) {
+      alert("Usuario creado con éxito, ahora inicia sesión");
+      setIsLogin(true);
+    } else {
+      alert("Error al crear usuario");
+    }
   }
 
   return (
     <View style={styles.container}>
       {isLogin ? (
-        <Animated.View 
+        <Animated.View
           style={[
             styles.formContainer,
             {
@@ -79,32 +120,32 @@ const Index = () => {
           ]}
         >
           <Text style={styles.title}>Iniciar Sesión</Text>
-          
+
           <TextInput
             style={styles.input}
             placeholder="Usuario"
-            value={formData.username}
-            onChangeText={(text) => handleInputChange('username', text)}
+            value={formData.nombreUsuario}
+            onChangeText={(text) => handleInputChange('nombreUsuario', text)}
           />
-          
+
           <TextInput
             style={styles.input}
             placeholder="Contraseña"
             secureTextEntry
-            value={formData.password}
-            onChangeText={(text) => handleInputChange('password', text)}
+            value={formData.contrasenia}
+            onChangeText={(text) => handleInputChange('contrasenia', text)}
           />
-          
+
           <Pressable style={styles.button} onPress={IniciarSesion}>
             <Text style={styles.buttonText}>Ingresar</Text>
           </Pressable>
-          
+
           <Pressable onPress={toggleView}>
             <Text style={styles.toggleText}>¿No tienes cuenta? Regístrate</Text>
           </Pressable>
         </Animated.View>
       ) : (
-        <Animated.View 
+        <Animated.View
           style={[
             styles.formContainer,
             {
@@ -119,33 +160,33 @@ const Index = () => {
           ]}
         >
           <Text style={styles.title}>Registro</Text>
-          
+
           <TextInput
             style={styles.input}
             placeholder="Usuario"
-            value={formData.username}
-            onChangeText={(text) => handleInputChange('username', text)}
+            value={formData.nombreUsuario}
+            onChangeText={(text) => handleInputChange('nombreUsuario', text)}
           />
-          
+
           <TextInput
             style={styles.input}
             placeholder="Contraseña"
             secureTextEntry
-            value={formData.password}
-            onChangeText={(text) => handleInputChange('password', text)}
+            value={formData.contrasenia}
+            onChangeText={(text) => handleInputChange('contrasenia', text)}
           />
-          
+
           <TextInput
             style={styles.input}
             placeholder="Carrera"
-            value={formData.career}
-            onChangeText={(text) => handleInputChange('career', text)}
+            value={formData.carrera}
+            onChangeText={(text) => handleInputChange('carrera', text)}
           />
-          
-          <Pressable style={styles.button} onPress={() => console.log('Registrarse')}>
+
+          <Pressable style={styles.button} onPress={Registrarse}>
             <Text style={styles.buttonText}>Crear cuenta</Text>
           </Pressable>
-          
+
           <Pressable onPress={toggleView}>
             <Text style={styles.toggleText}>¿Ya tienes cuenta? Inicia sesión</Text>
           </Pressable>
