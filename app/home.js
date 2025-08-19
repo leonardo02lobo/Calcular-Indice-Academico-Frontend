@@ -1,11 +1,5 @@
-import { Text, View } from "react-native";
+import Home from './../src/components/Home';
 
-export default function Home(){
-    return(
-        <View>
-            <Text>
-                Hola a Todos
-            </Text>
-        </View>
-    )
+export default function home(){
+    return <Home/>
 }

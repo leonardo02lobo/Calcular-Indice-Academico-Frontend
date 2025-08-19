@@ -87,6 +87,7 @@ const Index = () => {
       const data = await result.json();
 
       if (data.success) {
+        localStorage.setItem('user', JSON.stringify(data.user));
         router.push('/home');
       } else {
         alert(data.message || "Error al iniciar sesión");
