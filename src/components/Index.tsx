@@ -1,6 +1,15 @@
 import React, { useState, useRef } from 'react';
 import { useRouter } from 'expo-router';
 import { View, Text, TextInput, Pressable, StyleSheet, Animated, Easing } from 'react-native';
+import { Dropdown } from 'react-native-element-dropdown';
+import AntDesign from '@expo/vector-icons/AntDesign';
+
+const carreras = [
+  { label: 'Ingeniería en Informática', value: 'Ingenieria en Informatica' },
+  { label: 'Ingeniería Civil', value: 'Ingenieria Civil' },
+  { label: 'Medicina', value: 'Medicina' },
+  { label: 'Administración de Empresas', value: 'Administracion de Empresas' },
+];
 
 const Index = () => {
   const router = useRouter();
@@ -10,6 +19,7 @@ const Index = () => {
     contrasenia: '',
     carrera: ''
   });
+  const [isFocus, setIsFocus] = useState(false);
 
   const fadeAnim = useRef(new Animated.Value(1)).current;
   const slideAnim = useRef(new Animated.Value(0)).current;
@@ -30,6 +40,12 @@ const Index = () => {
       })
     ]).start(() => {
       setIsLogin(!isLogin);
+      // Reset form when toggling
+      setFormData({
+        nombreUsuario: '',
+        contrasenia: '',
+        carrera: ''
+      });
 
       Animated.parallel([
         Animated.timing(fadeAnim, {
@@ -57,8 +73,8 @@ const Index = () => {
 
   const IniciarSesion = async () => {
     if (formData.nombreUsuario == '' || formData.contrasenia == '') {
-      alert("Campos Vacios. Rellene los campos para continuar")
-      return
+      alert("Campos Vacíos. Rellene los campos para continuar");
+      return;
     }
     try {
       const result = await fetch("http://127.0.0.1:3000/api/usuario/IniciarSesion", {
@@ -79,28 +95,33 @@ const Index = () => {
       console.error("Error:", error);
       alert("Ocurrió un error al conectar con el servidor");
     }
-  }
+  };
 
   const Registrarse = async () => {
     if (formData.nombreUsuario == '' || formData.contrasenia == '' || formData.carrera == '') {
-      alert("Campos Vacios. Rellene los campos para continuar")
-      return
+      alert("Campos Vacíos. Rellene todos los campos para continuar");
+      return;
     }
-    const result = await fetch("http://127.0.0.1:3000/api/usuario/crearUsuario", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(formData)
-    })
-    const data = await result.json();
-    if (data.success) {
-      alert("Usuario creado con éxito, ahora inicia sesión");
-      setIsLogin(true);
-    } else {
-      alert("Error al crear usuario");
+    try {
+      const result = await fetch("http://127.0.0.1:3000/api/usuario/crearUsuario", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+      const data = await result.json();
+      if (data.success) {
+        alert("Usuario creado con éxito, ahora inicia sesión");
+        setIsLogin(true);
+      } else {
+        alert(data.message || "Error al crear usuario");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Ocurrió un error al conectar con el servidor");
     }
-  }
+  };
 
   return (
     <View style={styles.container}>
@@ -176,11 +197,34 @@ const Index = () => {
             onChangeText={(text) => handleInputChange('contrasenia', text)}
           />
 
-          <TextInput
-            style={styles.input}
-            placeholder="Carrera"
+          <Dropdown
+            style={[styles.dropdown, isFocus && { borderColor: '#4285f4' }]}
+            placeholderStyle={styles.placeholderStyle}
+            selectedTextStyle={styles.selectedTextStyle}
+            inputSearchStyle={styles.inputSearchStyle}
+            iconStyle={styles.iconStyle}
+            data={carreras}
+            search
+            maxHeight={300}
+            labelField="label"
+            valueField="value"
+            placeholder={!isFocus ? 'Selecciona tu carrera' : '...'}
+            searchPlaceholder="Buscar..."
             value={formData.carrera}
-            onChangeText={(text) => handleInputChange('carrera', text)}
+            onFocus={() => setIsFocus(true)}
+            onBlur={() => setIsFocus(false)}
+            onChange={item => {
+              handleInputChange('carrera', item.value);
+              setIsFocus(false);
+            }}
+            renderLeftIcon={() => (
+              <AntDesign
+                style={styles.icon}
+                color={isFocus ? '#4285f4' : '#999'}
+                name="book"
+                size={20}
+              />
+            )}
           />
 
           <Pressable style={styles.button} onPress={Registrarse}>
@@ -232,6 +276,34 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     fontSize: 16,
   },
+  dropdown: {
+    height: 50,
+    borderColor: '#ddd',
+    borderWidth: 1,
+    borderRadius: 8,
+    paddingHorizontal: 15,
+    marginBottom: 15,
+  },
+  icon: {
+    marginRight: 10,
+  },
+  placeholderStyle: {
+    fontSize: 16,
+    color: '#999',
+  },
+  selectedTextStyle: {
+    fontSize: 16,
+    color: '#333',
+  },
+  iconStyle: {
+    width: 20,
+    height: 20,
+  },
+  inputSearchStyle: {
+    height: 40,
+    fontSize: 16,
+    borderRadius: 8,
+  },
   button: {
     height: 50,
     borderRadius: 8,
@@ -250,7 +322,7 @@ const styles = StyleSheet.create({
     color: '#4285f4',
     textAlign: 'center',
     fontSize: 16,
-  }
+  },
 });
 
 export default Index;
