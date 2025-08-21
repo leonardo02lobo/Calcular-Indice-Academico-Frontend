@@ -1,329 +1,98 @@
-import React, { useState, useRef } from 'react';
-import { useRouter } from 'expo-router';
-import { View, Text, TextInput, Pressable, StyleSheet, Animated, Easing } from 'react-native';
-import { Dropdown } from 'react-native-element-dropdown';
-import AntDesign from '@expo/vector-icons/AntDesign';
+import { StyleSheet, View, Text, ScrollView, Button, Alert } from "react-native";
+import { useState, useEffect } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Dropdown } from "react-native-element-dropdown";
+import TarjetaMateria from "../components/TarjetaMateria";
+import ObtenerIndiceAcademico from "../script/ObtenerIndiceAcademico";
+import materiasData from "../data/materias.json";
 
-const carreras = [
-  { label: 'Ingeniería en Informática', value: 'Ingenieria en Informatica' },
-  { label: 'Ingeniería Civil', value: 'Ingenieria Civil' },
-  { label: 'Medicina', value: 'Medicina' },
-  { label: 'Administración de Empresas', value: 'Administracion de Empresas' },
-];
+export default function Home() {
+  const [carrera, setCarrera] = useState<string | null>(null);
+  const [materias, setMaterias] = useState<any[]>([]);
+  const [notasSeleccionadas, setNotasSeleccionadas] = useState<{ [codigo: string]: { nota: number; UC: number } }>({});
+  const [indice, setIndice] = useState<number>(0);
 
-const Index = () => {
-  const router = useRouter();
-  const [isLogin, setIsLogin] = useState(true);
-  const [formData, setFormData] = useState({
-    nombreUsuario: '',
-    contrasenia: '',
-    carrera: ''
-  });
-  const [isFocus, setIsFocus] = useState(false);
+  useEffect(() => {
+    const cargarDatos = async () => {
+      try {
+        const storedCarrera = await AsyncStorage.getItem("@carrera");
+        const storedNotas = await AsyncStorage.getItem("@notas");
+        
+        if (storedCarrera) {
+          setCarrera(storedCarrera);
+          setMaterias(materiasData[storedCarrera] || []);
+        }
+        if (storedNotas) {
+          setNotasSeleccionadas(JSON.parse(storedNotas));
+        }
+      } catch (error) {
+        console.error("Error cargando datos locales:", error);
+      }
+    };
 
-  const fadeAnim = useRef(new Animated.Value(1)).current;
-  const slideAnim = useRef(new Animated.Value(0)).current;
+    cargarDatos();
+  }, []);
 
-  const toggleView = () => {
-    Animated.parallel([
-      Animated.timing(fadeAnim, {
-        toValue: 0,
-        duration: 200,
-        easing: Easing.ease,
-        useNativeDriver: true,
-      }),
-      Animated.timing(slideAnim, {
-        toValue: isLogin ? 1 : -1,
-        duration: 300,
-        easing: Easing.ease,
-        useNativeDriver: true,
-      })
-    ]).start(() => {
-      setIsLogin(!isLogin);
-      // Reset form when toggling
-      setFormData({
-        nombreUsuario: '',
-        contrasenia: '',
-        carrera: ''
-      });
+  const seleccionarCarrera = async (value: string) => {
+    setCarrera(value);
+    setMaterias(materiasData[value] || []);
+    await AsyncStorage.setItem("@carrera", value);
+  };
 
-      Animated.parallel([
-        Animated.timing(fadeAnim, {
-          toValue: 1,
-          duration: 200,
-          easing: Easing.ease,
-          useNativeDriver: true,
-        }),
-        Animated.timing(slideAnim, {
-          toValue: 0,
-          duration: 300,
-          easing: Easing.ease,
-          useNativeDriver: true,
-        })
-      ]).start();
+  const handleChangeNota = (codigo: string, nota: number, UC: number) => {
+    setNotasSeleccionadas((prev) => {
+      const updated = { ...prev, [codigo]: { nota, UC } };
+      AsyncStorage.setItem("@notas", JSON.stringify(updated));
+      return updated;
     });
   };
 
-  const handleInputChange = (name, value) => {
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  const IniciarSesion = async () => {
-    if (formData.nombreUsuario == '' || formData.contrasenia == '') {
-      alert("Campos Vacíos. Rellene los campos para continuar");
-      return;
-    }
-    try {
-      const result = await fetch("http://127.0.0.1:3000/api/usuario/IniciarSesion", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-      });
-      const data = await result.json();
-
-      if (data.success) {
-        localStorage.setItem('user', JSON.stringify(data.user));
-        router.push('/home');
-      } else {
-        alert(data.message || "Error al iniciar sesión");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Ocurrió un error al conectar con el servidor");
-    }
-  };
-
-  const Registrarse = async () => {
-    if (formData.nombreUsuario == '' || formData.contrasenia == '' || formData.carrera == '') {
-      alert("Campos Vacíos. Rellene todos los campos para continuar");
-      return;
-    }
-    try {
-      const result = await fetch("http://127.0.0.1:3000/api/usuario/crearUsuario", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-      });
-      const data = await result.json();
-      if (data.success) {
-        alert("Usuario creado con éxito, ahora inicia sesión");
-        setIsLogin(true);
-      } else {
-        alert(data.message || "Error al crear usuario");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Ocurrió un error al conectar con el servidor");
-    }
+  const calcularIndice = () => {
+    console.log(materias, notasSeleccionadas);
+    const indiceAcademico = ObtenerIndiceAcademico(notasSeleccionadas);
+    console.log("Índice académico calculado:", indiceAcademico);
+    setIndice(indiceAcademico);
+    Alert.alert("Índice calculado", `Tu índice académico es: ${indiceAcademico.toFixed(3)}`);
   };
 
   return (
     <View style={styles.container}>
-      {isLogin ? (
-        <Animated.View
-          style={[
-            styles.formContainer,
-            {
-              opacity: fadeAnim,
-              transform: [{
-                translateY: slideAnim.interpolate({
-                  inputRange: [-1, 0, 1],
-                  outputRange: [0, 0, 50]
-                })
-              }]
-            }
-          ]}
-        >
-          <Text style={styles.title}>Iniciar Sesión</Text>
+      <View style={styles.header}>
+        <Text style={styles.textHeader}>Índice Académico</Text>
+        <Dropdown
+          style={styles.dropdown}
+          data={Object.keys(materiasData).map((carrera) => ({ label: carrera, value: carrera }))}
+          labelField="label"
+          valueField="value"
+          placeholder="Selecciona tu carrera"
+          value={carrera}
+          onChange={(item) => seleccionarCarrera(item.value)}
+        />
+      </View>
 
-          <TextInput
-            style={styles.input}
-            placeholder="Usuario"
-            value={formData.nombreUsuario}
-            onChangeText={(text) => handleInputChange('nombreUsuario', text)}
+      <ScrollView style={styles.container}>
+        {materias.map((materia) => (
+          <TarjetaMateria
+            key={materia.Codigo}
+            materia={materia.nombre}
+            unidadCredito={materia.UC}
+            codigo={materia.Codigo}
+            notaFinal={notasSeleccionadas[materia.Codigo]?.nota ?? 0}
+            onChangeNota={handleChangeNota}
           />
+        ))}
+      </ScrollView>
 
-          <TextInput
-            style={styles.input}
-            placeholder="Contraseña"
-            secureTextEntry
-            value={formData.contrasenia}
-            onChangeText={(text) => handleInputChange('contrasenia', text)}
-          />
-
-          <Pressable style={styles.button} onPress={IniciarSesion}>
-            <Text style={styles.buttonText}>Ingresar</Text>
-          </Pressable>
-
-          <Pressable onPress={toggleView}>
-            <Text style={styles.toggleText}>¿No tienes cuenta? Regístrate</Text>
-          </Pressable>
-        </Animated.View>
-      ) : (
-        <Animated.View
-          style={[
-            styles.formContainer,
-            {
-              opacity: fadeAnim,
-              transform: [{
-                translateY: slideAnim.interpolate({
-                  inputRange: [-1, 0, 1],
-                  outputRange: [-50, 0, 0]
-                })
-              }]
-            }
-          ]}
-        >
-          <Text style={styles.title}>Registro</Text>
-
-          <TextInput
-            style={styles.input}
-            placeholder="Usuario"
-            value={formData.nombreUsuario}
-            onChangeText={(text) => handleInputChange('nombreUsuario', text)}
-          />
-
-          <TextInput
-            style={styles.input}
-            placeholder="Contraseña"
-            secureTextEntry
-            value={formData.contrasenia}
-            onChangeText={(text) => handleInputChange('contrasenia', text)}
-          />
-
-          <Dropdown
-            style={[styles.dropdown, isFocus && { borderColor: '#4285f4' }]}
-            placeholderStyle={styles.placeholderStyle}
-            selectedTextStyle={styles.selectedTextStyle}
-            inputSearchStyle={styles.inputSearchStyle}
-            iconStyle={styles.iconStyle}
-            data={carreras}
-            search
-            maxHeight={300}
-            labelField="label"
-            valueField="value"
-            placeholder={!isFocus ? 'Selecciona tu carrera' : '...'}
-            searchPlaceholder="Buscar..."
-            value={formData.carrera}
-            onFocus={() => setIsFocus(true)}
-            onBlur={() => setIsFocus(false)}
-            onChange={item => {
-              handleInputChange('carrera', item.value);
-              setIsFocus(false);
-            }}
-            renderLeftIcon={() => (
-              <AntDesign
-                style={styles.icon}
-                color={isFocus ? '#4285f4' : '#999'}
-                name="book"
-                size={20}
-              />
-            )}
-          />
-
-          <Pressable style={styles.button} onPress={Registrarse}>
-            <Text style={styles.buttonText}>Crear cuenta</Text>
-          </Pressable>
-
-          <Pressable onPress={toggleView}>
-            <Text style={styles.toggleText}>¿Ya tienes cuenta? Inicia sesión</Text>
-          </Pressable>
-        </Animated.View>
-      )}
+      <Button title="Calcular Índice" onPress={calcularIndice} />
+      <Text style={styles.textIndice}>Índice actual: {indice.toFixed(3)}</Text>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-    backgroundColor: '#f5f5f5'
-  },
-  formContainer: {
-    width: '100%',
-    maxWidth: 400,
-    padding: 20,
-    borderRadius: 10,
-    backgroundColor: 'white',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 6,
-    elevation: 3,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    color: '#333',
-    textAlign: 'center'
-  },
-  input: {
-    height: 50,
-    borderColor: '#ddd',
-    borderWidth: 1,
-    borderRadius: 8,
-    paddingHorizontal: 15,
-    marginBottom: 15,
-    fontSize: 16,
-  },
-  dropdown: {
-    height: 50,
-    borderColor: '#ddd',
-    borderWidth: 1,
-    borderRadius: 8,
-    paddingHorizontal: 15,
-    marginBottom: 15,
-  },
-  icon: {
-    marginRight: 10,
-  },
-  placeholderStyle: {
-    fontSize: 16,
-    color: '#999',
-  },
-  selectedTextStyle: {
-    fontSize: 16,
-    color: '#333',
-  },
-  iconStyle: {
-    width: 20,
-    height: 20,
-  },
-  inputSearchStyle: {
-    height: 40,
-    fontSize: 16,
-    borderRadius: 8,
-  },
-  button: {
-    height: 50,
-    borderRadius: 8,
-    backgroundColor: '#4285f4',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 10,
-    marginBottom: 20,
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  toggleText: {
-    color: '#4285f4',
-    textAlign: 'center',
-    fontSize: 16,
-  },
+  container: { flex: 1, padding: 10,backgroundColor: "#f0f0f0" },
+  header: { marginBottom: 15 },
+  textHeader: { fontSize: 24, fontWeight: "bold", color: "black" },
+  dropdown: { marginVertical: 10, borderWidth: 1, borderRadius: 8, padding: 8 },
+  textIndice: { marginTop: 10, fontSize: 18, fontWeight: "bold" }
 });
-
-export default Index;

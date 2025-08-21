@@ -1,0 +1,2251 @@
+{
+    "Ingeniería en Informática": [
+        {
+            "nombre": "Introducción a la Ingeniería en Informática",
+            "UC": 1,
+            "Codigo": "412101T"
+        },
+        {
+            "nombre": "Computación I",
+            "UC": 3,
+            "Codigo": "415102T"
+        },
+        {
+            "nombre": "Matemática Discreta",
+            "UC": 3,
+            "Codigo": "834102T"
+        },
+        {
+            "nombre": "Matemática I",
+            "UC": 4,
+            "Codigo": "826101T"
+        },
+        {
+            "nombre": "Lenguaje y Comunicación",
+            "UC": 2,
+            "Codigo": "1033101T"
+        },
+        {
+            "nombre": "Efectividad Personal",
+            "UC": 1,
+            "Codigo": "1032109T"
+        },
+        {
+            "nombre": "Actividad Deportiva I",
+            "UC": 1,
+            "Codigo": "0007001T"
+        },
+        {
+            "nombre": "Programación I",
+            "UC": 4,
+            "Codigo": "416202T"
+        },
+        {
+            "nombre": "Química General I",
+            "UC": 3,
+            "Codigo": "914201T"
+        },
+        {
+            "nombre": "Matemática II",
+            "UC": 4,
+            "Codigo": "826201T"
+        },
+        {
+            "nombre": "Física I",
+            "UC": 4,
+            "Codigo": "846203T"
+        },
+        {
+            "nombre": "Laboratorio de Física I",
+            "UC": 1,
+            "Codigo": "842204L"
+        },
+        {
+            "nombre": "Actividad Deportiva II",
+            "UC": 1,
+            "Codigo": "0007002T"
+        },
+        {
+            "nombre": "Estructura de Datos",
+            "UC": 4,
+            "Codigo": "424301T"
+        },
+        {
+            "nombre": "Teoría General de Sistemas",
+            "UC": 2,
+            "Codigo": "413302T"
+        },
+        {
+            "nombre": "Matemática III",
+            "UC": 4,
+            "Codigo": "826301T"
+        },
+        {
+            "nombre": "Física II",
+            "UC": 4,
+            "Codigo": "846302T"
+        },
+        {
+            "nombre": "Laboratorio de Física II",
+            "UC": 1,
+            "Codigo": "842303L"
+        },
+        {
+            "nombre": "Inglés I",
+            "UC": 2,
+            "Codigo": "1023202T"
+        },
+        {
+            "nombre": "Actividad Deportiva III",
+            "UC": 1,
+            "Codigo": "0007003T"
+        },
+        {
+            "nombre": "Programación II",
+            "UC": 3,
+            "Codigo": "425401T"
+        },
+        {
+            "nombre": "Fundamentos de Lógica Digital",
+            "UC": 3,
+            "Codigo": "425404T"
+        },
+        {
+            "nombre": "Estadística I",
+            "UC": 3,
+            "Codigo": "834405T"
+        },
+        {
+            "nombre": "Matemática IV",
+            "UC": 4,
+            "Codigo": "826401T"
+        },
+        {
+            "nombre": "Inglés II",
+            "UC": 2,
+            "Codigo": "1023302T"
+        },
+        {
+            "nombre": "Ciencia y Sociedad I",
+            "UC": 1,
+            "Codigo": "1032201T"
+        },
+        {
+            "nombre": "Actividad Deportiva IV",
+            "UC": 1,
+            "Codigo": "0007004T"
+        },
+        {
+            "nombre": "Organización del Computador",
+            "UC": 4,
+            "Codigo": "426502T"
+        },
+        {
+            "nombre": "Base de Datos I",
+            "UC": 3,
+            "Codigo": "425501T"
+        },
+        {
+            "nombre": "Estadística II",
+            "UC": 3,
+            "Codigo": "834501T"
+        },
+        {
+            "nombre": "Automatización",
+            "UC": 4,
+            "Codigo": "0007005T"
+        },
+        {
+            "nombre": "Necesidad, Valores y Proyecto de Vida",
+            "UC": 1,
+            "Codigo": "1032301T"
+        },
+        {
+            "nombre": "Análisis Numérico",
+            "UC": 3,
+            "Codigo": "834504T"
+        },
+        {
+            "nombre": "Seminario De Servicio Comunitario",
+            "UC": 0,
+            "Codigo": "1000001T"
+        },
+        {
+            "nombre": "Proyecto De Servicio Comunitario",
+            "UC": 0,
+            "Codigo": "1000002T"
+        },
+        {
+            "nombre": "Actividad Deportiva V",
+            "UC": 1,
+            "Codigo": "0007006T"
+        },
+        {
+            "nombre": "Comunicaciones I",
+            "UC": 3,
+            "Codigo": "425602T"
+        },
+        {
+            "nombre": "Sistemas de Información I",
+            "UC": 3,
+            "Codigo": "425601T"
+        },
+        {
+            "nombre": "Investigación de Operaciones I",
+            "UC": 4,
+            "Codigo": "425605T"
+        },
+        {
+            "nombre": "Sistemas Operativos",
+            "UC": 3,
+            "Codigo": "425603T"
+        },
+        {
+            "nombre": "Multimedia",
+            "UC": 3,
+            "Codigo": "424604T"
+        },
+        {
+            "nombre": "Economía",
+            "UC": 2,
+            "Codigo": "1013401T"
+        },
+        {
+            "nombre": "Servicio Comunitario",
+            "UC": 0,
+            "Codigo": "1000003T"
+        },
+        {
+            "nombre": "Actividad Deportiva VI",
+            "UC": 1,
+            "Codigo": "0007007T"
+        },
+        {
+            "nombre": "Comunicaciones II",
+            "UC": 3,
+            "Codigo": "425702T"
+        },
+        {
+            "nombre": "Base de Datos II",
+            "UC": 3,
+            "Codigo": "425705T"
+        },
+        {
+            "nombre": "Investigación de Operaciones II",
+            "UC": 3,
+            "Codigo": "425701T"
+        },
+        {
+            "nombre": "Electiva I",
+            "UC": 2,
+            "Codigo": "423703T"
+        },
+        {
+            "nombre": "Compiladores e Interpretes",
+            "UC": 3,
+            "Codigo": "425706T"
+        },
+        {
+            "nombre": "Ingeniería Económica",
+            "UC": 3,
+            "Codigo": "134708T"
+        },
+        {
+            "nombre": "Actividad Deportiva VII",
+            "UC": 1,
+            "Codigo": "0007008T"
+        },
+        {
+            "nombre": "Sistemas Distribuidos",
+            "UC": 3,
+            "Codigo": "425802T"
+        },
+        {
+            "nombre": "Sistemas de Información II",
+            "UC": 3,
+            "Codigo": "425801T"
+        },
+        {
+            "nombre": "Simulación de Sistemas",
+            "UC": 3,
+            "Codigo": "425803T"
+        },
+        {
+            "nombre": "Electiva II",
+            "UC": 2,
+            "Codigo": "0007009T"
+        },
+        {
+            "nombre": "Finanzas para Ingenieros",
+            "UC": 2,
+            "Codigo": "423804T"
+        },
+        {
+            "nombre": "Ecología y Contaminación Ambiental",
+            "UC": 2,
+            "Codigo": "1123403T"
+        },
+        {
+            "nombre": "Actividad Deportiva VIII",
+            "UC": 1,
+            "Codigo": "0007010T"
+        },
+        {
+            "nombre": "Ingeniería del Software",
+            "UC": 3,
+            "Codigo": "425901T"
+        },
+        {
+            "nombre": "Seminario",
+            "UC": 3,
+            "Codigo": "424902T"
+        },
+        {
+            "nombre": "Electiva III",
+            "UC": 2,
+            "Codigo": "0007011T"
+        },
+        {
+            "nombre": "Electiva IV",
+            "UC": 2,
+            "Codigo": "0007012T"
+        },
+        {
+            "nombre": "Legislación, Valores Nacionales y Proyecto de País",
+            "UC": 1,
+            "Codigo": "1032601T"
+        },
+        {
+            "nombre": "Metodología de la Investigación",
+            "UC": 2,
+            "Codigo": "1033801T"
+        },
+        {
+            "nombre": "Actividad Deportiva IX",
+            "UC": 1,
+            "Codigo": "0007013T"
+        },
+        {
+            "nombre": "Trabajo de Aplicación Profesional (Proyecto Especial de Grado)",
+            "UC": 12,
+            "Codigo": "0007014T"
+        },
+        {
+            "nombre": "Actividad Deportiva X",
+            "UC": 1,
+            "Codigo": "0007015T"
+        }
+    ],
+    "Ingeniería en Electrónica": [
+        {
+            "Codigo": "0826101T",
+            "nombre": "Matemática I",
+            "UC": 4
+        },
+        {
+            "Codigo": "0644103T",
+            "nombre": "Dibujo I",
+            "UC": 3
+        },
+        {
+            "Codigo": "0415102T",
+            "nombre": "Computación I",
+            "UC": 3
+        },
+        {
+            "Codigo": "1023111T",
+            "nombre": "Lenguaje y Comunicación",
+            "UC": 2
+        },
+        {
+            "Codigo": "1032109T",
+            "nombre": "Efectividad Personal",
+            "UC": 1
+        },
+        {
+            "Codigo": "0222101T",
+            "nombre": "Introducción a la Ingeniería Electrónica",
+            "UC": 1
+        },
+        {
+            "Codigo": "0826201T",
+            "nombre": "Matemática II",
+            "UC": 4
+        },
+        {
+            "Codigo": "0415201T",
+            "nombre": "Computación II",
+            "UC": 3
+        },
+        {
+            "Codigo": "0914201T",
+            "nombre": "Química General I",
+            "UC": 3
+        },
+        {
+            "Codigo": "0912202L",
+            "nombre": "Laboratorio de Química General I",
+            "UC": 1
+        },
+        {
+            "Codigo": "0846203T",
+            "nombre": "Física I",
+            "UC": 4
+        },
+        {
+            "Codigo": "1012207T",
+            "nombre": "Ciencia y Sociedad I",
+            "UC": 1
+        },
+        {
+            "Codigo": "0842204L",
+            "nombre": "Laboratorio de Física I",
+            "UC": 1
+        },
+        {
+            "Codigo": "1023202T",
+            "nombre": "Inglés I",
+            "UC": 2
+        },
+        {
+            "Codigo": "0826301T",
+            "nombre": "Matemática III",
+            "UC": 4
+        },
+        {
+            "Codigo": "0846302T",
+            "nombre": "Física II",
+            "UC": 4
+        },
+        {
+            "Codigo": "1032301T",
+            "nombre": "Necesidad, Valores y Proyecto de Vida",
+            "UC": 1
+        },
+        {
+            "Codigo": "0244302T",
+            "nombre": "Tecnología de Información y Comunicaciones",
+            "UC": 3
+        },
+        {
+            "Codigo": "0215301T",
+            "nombre": "Circuitos I",
+            "UC": 3
+        },
+        {
+            "Codigo": "1023302T",
+            "nombre": "Inglés II",
+            "UC": 2
+        },
+        {
+            "Codigo": "0826401T",
+            "nombre": "Matemática IV",
+            "UC": 4
+        },
+        {
+            "Codigo": "0834403T",
+            "nombre": "Probabilidad y Estadística",
+            "UC": 3
+        },
+        {
+            "Codigo": "0213401T",
+            "nombre": "Mediciones",
+            "UC": 2
+        },
+        {
+            "Codigo": "0215402T",
+            "nombre": "Circuitos II",
+            "UC": 3
+        },
+        {
+            "Codigo": "0212403L",
+            "nombre": "Laboratorio de Mediciones",
+            "UC": 1
+        },
+        {
+            "Codigo": "0624402T",
+            "nombre": "Termotecnia",
+            "UC": 3
+        },
+        {
+            "Codigo": "0234501T",
+            "nombre": "Señales y Sistemas I",
+            "UC": 3
+        },
+        {
+            "Codigo": "0834503T",
+            "nombre": "Métodos Numéricos",
+            "UC": 3
+        },
+        {
+            "Codigo": "0225502T",
+            "nombre": "Electrónica I",
+            "UC": 3
+        },
+        {
+            "Codigo": "0225503T",
+            "nombre": "Sistemas Digitales I",
+            "UC": 3
+        },
+        {
+            "Codigo": "0244504T",
+            "nombre": "Teoría Electromagnética",
+            "UC": 3
+        },
+        {
+            "Codigo": "0213505T",
+            "nombre": "Tecnología Eléctrica",
+            "UC": 2
+        },
+        {
+            "Codigo": "0213506L",
+            "nombre": "Laboratorio de Circuitos",
+            "UC": 1
+        },
+        {
+            "Codigo": "1000001T",
+            "nombre": "Seminario Servicio Comunitario",
+            "UC": 0
+        },
+        {
+            "Codigo": "1000002T",
+            "nombre": "Proyecto de Servicio Comunitario",
+            "UC": 0
+        },
+        {
+            "Codigo": "1013401T",
+            "nombre": "Economía",
+            "UC": 2
+        },
+        {
+            "Codigo": "0244606T",
+            "nombre": "Señales y Sistemas II",
+            "UC": 3
+        },
+        {
+            "Codigo": "0223602L",
+            "nombre": "Laboratorio de Electrónica I",
+            "UC": 1
+        },
+        {
+            "Codigo": "0225601T",
+            "nombre": "Electrónica II",
+            "UC": 3
+        },
+        {
+            "Codigo": "0213608L",
+            "nombre": "Laboratorio de Tecnología Eléctrica",
+            "UC": 1
+        },
+        {
+            "Codigo": "0223605T",
+            "nombre": "Tecnología Electrónica",
+            "UC": 2
+        },
+        {
+            "Codigo": "0224603T",
+            "nombre": "Sistemas Digitales II",
+            "UC": 3
+        },
+        {
+            "Codigo": "0223604L",
+            "nombre": "Laboratorio de Sistemas Digitales I",
+            "UC": 1
+        },
+        {
+            "Codigo": "1000003T",
+            "nombre": "Servicio Comunitario",
+            "UC": 0
+        },
+        {
+            "Codigo": "0234701T",
+            "nombre": "Sistemas de Control I",
+            "UC": 3
+        },
+        {
+            "Codigo": "0223702L",
+            "nombre": "Laboratorio de Electrónica II",
+            "UC": 1
+        },
+        {
+            "Codigo": "0225703T",
+            "nombre": "Electrónica III",
+            "UC": 3
+        },
+        {
+            "Codigo": "0244704T",
+            "nombre": "Telecomunicaciones I",
+            "UC": 3
+        },
+        {
+            "Codigo": "0223705L",
+            "nombre": "Laboratorio de Sistemas Digitales II",
+            "UC": 1
+        },
+        {
+            "Codigo": "0244706T",
+            "nombre": "Electrónica del Estado Sólido",
+            "UC": 3
+        },
+        {
+            "Codigo": "1032402T",
+            "nombre": "Gerencia Personal, Contexto y Proyecto Organizacional",
+            "UC": 1
+        },
+        {
+            "Codigo": "1113404T",
+            "nombre": "Ecología y Contaminación Ambiental",
+            "UC": 2
+        },
+        {
+            "Codigo": "0234801T",
+            "nombre": "Sistemas de Control II",
+            "UC": 3
+        },
+        {
+            "Codigo": "0223802L",
+            "nombre": "Laboratorio de Electrónica III",
+            "UC": 1
+        },
+        {
+            "Codigo": "0225803T",
+            "nombre": "Electrónica IV",
+            "UC": 3
+        },
+        {
+            "Codigo": "0243804L",
+            "nombre": "Laboratorio de Telecomunicaciones",
+            "UC": 1
+        },
+        {
+            "Codigo": "0243805T",
+            "nombre": "Comunicaciones de RF",
+            "UC": 2
+        },
+        {
+            "Codigo": "0232806L",
+            "nombre": "Laboratorio de Sistemas de Control I",
+            "UC": 1
+        },
+        {
+            "Codigo": "1032601T",
+            "nombre": "Legislación y Valores Nacionales y Proyecto de País",
+            "UC": 1
+        },
+        {
+            "Codigo": "0243807T",
+            "nombre": "Redes de Computadoras",
+            "UC": 2
+        },
+        {
+            "Codigo": "ELECTIVA",
+            "nombre": "Electiva",
+            "UC": 2
+        },
+        {
+            "Codigo": "0233903T",
+            "nombre": "Instrumentación Electrónica",
+            "UC": 2
+        },
+        {
+            "Codigo": "0233902T",
+            "nombre": "Proyectos de Instrumentación Electrónica",
+            "UC": 2
+        },
+        {
+            "Codigo": "0243906T",
+            "nombre": "Proyectos de Radio Frecuencia",
+            "UC": 2
+        },
+        {
+            "Codigo": "0233901T",
+            "nombre": "Proyectos Sistemas de Control",
+            "UC": 2
+        },
+        {
+            "Codigo": "ELECTIVA",
+            "nombre": "Electiva",
+            "UC": 2
+        },
+        {
+            "Codigo": "1013308T",
+            "nombre": "Metodología de la Investigación",
+            "UC": 2
+        },
+        {
+            "Codigo": "0124601T",
+            "nombre": "Organización",
+            "UC": 3
+        },
+        {
+            "Codigo": "0007014T",
+            "nombre": "Trabajo de Aplicación Profesional",
+            "UC": 12
+        }
+    ],
+    "Ingeniería Civil": [
+        {
+            "nombre": "Computación I",
+            "UC": 3,
+            "Codigo": "0415102T"
+        },
+        {
+            "nombre": "Matemática I",
+            "UC": 4,
+            "Codigo": "0826101T"
+        },
+        {
+            "nombre": "Lenguaje Y Comunicación",
+            "UC": 2,
+            "Codigo": "1023111T"
+        },
+        {
+            "nombre": "Efectividad Personal",
+            "UC": 1,
+            "Codigo": "1032109T"
+        },
+        {
+            "nombre": "Sistemas De Representación",
+            "UC": 3,
+            "Codigo": "1524102T"
+        },
+        {
+            "nombre": "Introducción A La Ingeniería Civil",
+            "UC": 1,
+            "Codigo": "1542101T"
+        },
+        {
+            "nombre": "Actividad Deportiva I",
+            "UC": 1,
+            "Codigo": "0007002T"
+        },
+        {
+            "nombre": "Álgebra Lineal",
+            "UC": 3,
+            "Codigo": "0824207T"
+        },
+        {
+            "nombre": "Matemática II",
+            "UC": 4,
+            "Codigo": "0826201T"
+        },
+        {
+            "nombre": "Laboratorio De Física I",
+            "UC": 4,
+            "Codigo": "0842204L"
+        },
+        {
+            "nombre": "Física I",
+            "UC": 4,
+            "Codigo": "0846203T"
+        },
+        {
+            "nombre": "Ciencia Y Sociedad I",
+            "UC": 1,
+            "Codigo": "1012207T"
+        },
+        {
+            "nombre": "Ingles I",
+            "UC": 2,
+            "Codigo": "1023202T"
+        },
+        {
+            "nombre": "Actividad Deportiva II",
+            "UC": 1,
+            "Codigo": "0007005T"
+        },
+        {
+            "nombre": "Mecánica I",
+            "UC": 3,
+            "Codigo": "0615301T"
+        },
+        {
+            "nombre": "Matemática III",
+            "UC": 4,
+            "Codigo": "0826301T"
+        },
+        {
+            "nombre": "Laboratorio De Física II",
+            "UC": 4,
+            "Codigo": "0842303L"
+        },
+        {
+            "nombre": "Física II",
+            "UC": 4,
+            "Codigo": "0846302T"
+        },
+        {
+            "nombre": "Laboratorio De Química General I",
+            "UC": 3,
+            "Codigo": "0912202L"
+        },
+        {
+            "nombre": "Química General I",
+            "UC": 3,
+            "Codigo": "0914201T"
+        },
+        {
+            "nombre": "Ingles II",
+            "UC": 2,
+            "Codigo": "1023302T"
+        },
+        {
+            "nombre": "Actividad Deportiva III",
+            "UC": 1,
+            "Codigo": "0007008T"
+        },
+        {
+            "nombre": "Computación Aplicada",
+            "UC": 2,
+            "Codigo": "0413104T"
+        },
+        {
+            "nombre": "Mecánica II",
+            "UC": 3,
+            "Codigo": "0615405T"
+        },
+        {
+            "nombre": "Matemática IV",
+            "UC": 4,
+            "Codigo": "0826401T"
+        },
+        {
+            "nombre": "Probabilidad Y Estadística",
+            "UC": 3,
+            "Codigo": "0834403T"
+        },
+        {
+            "nombre": "Necesidades, Valores Y Proyectos De Vida",
+            "UC": 1,
+            "Codigo": "1032301T"
+        },
+        {
+            "nombre": "Dibujo Asistido Por Computadora",
+            "UC": 3,
+            "Codigo": "1524401T"
+        },
+        {
+            "nombre": "Métodos Numéricos",
+            "UC": 3,
+            "Codigo": "0834503T"
+        },
+        {
+            "nombre": "Mecánica De Los Materiales",
+            "UC": 4,
+            "Codigo": "1516501T"
+        },
+        {
+            "nombre": "Geología Aplicada",
+            "UC": 2,
+            "Codigo": "1523503T"
+        },
+        {
+            "nombre": "Topografía Para Ingeniería Civil",
+            "UC": 4,
+            "Codigo": "1526504T"
+        },
+        {
+            "nombre": "Saneamiento Ambiental",
+            "UC": 3,
+            "Codigo": "1533505T"
+        },
+        {
+            "nombre": "Mecánica De Fluidos I",
+            "UC": 1,
+            "Codigo": "1536502T"
+        },
+        {
+            "nombre": "Materiales Y Ensayos",
+            "UC": 3,
+            "Codigo": "1514603T"
+        },
+        {
+            "nombre": "Analisis Estructural I",
+            "UC": 4,
+            "Codigo": "1516602T"
+        },
+        {
+            "nombre": "Proyectos Viales I",
+            "UC": 3,
+            "Codigo": "1524605T"
+        },
+        {
+            "nombre": "Hidrología Aplicada",
+            "UC": 2,
+            "Codigo": "1533604T"
+        },
+        {
+            "nombre": "Mecánica De Fluidos II",
+            "UC": 3,
+            "Codigo": "1534601T"
+        },
+        {
+            "nombre": "Instalaciones Para Edificios",
+            "UC": 3,
+            "Codigo": "1534606T"
+        },
+        {
+            "nombre": "Seminario De Servicio Comunitario",
+            "UC": 0,
+            "Codigo": "1000001T"
+        },
+        {
+            "nombre": "Proyecto De Servicio Comunitario",
+            "UC": 0,
+            "Codigo": "1000002T"
+        },
+        {
+            "nombre": "Analisis Estructural II",
+            "UC": 4,
+            "Codigo": "1516701T"
+        },
+        {
+            "nombre": "Concreto Armado",
+            "UC": 4,
+            "Codigo": "1516705T"
+        },
+        {
+            "nombre": "Proyectos Viales II",
+            "UC": 3,
+            "Codigo": "1524703T"
+        },
+        {
+            "nombre": "Mecánica De Suelos",
+            "UC": 3,
+            "Codigo": "1524703T"
+        },
+        {
+            "nombre": "Obras Hidraulicas",
+            "UC": 3,
+            "Codigo": "1525702T"
+        },
+        {
+            "nombre": "Servicio Comunitario",
+            "UC": 0,
+            "Codigo": "1534704T"
+        },
+        {
+            "nombre": "Ingeniería De Transito",
+            "UC": 2,
+            "Codigo": "1523706T"
+        },
+        {
+            "nombre": "Metodología De La Investigación",
+            "UC": 2,
+            "Codigo": "1013308T"
+        },
+        {
+            "nombre": "Proyectos Estructurales I",
+            "UC": 4,
+            "Codigo": "1516801T"
+        },
+        {
+            "nombre": "Fundaciones Y Muros",
+            "UC": 4,
+            "Codigo": "1516802T"
+        },
+        {
+            "nombre": "Obras Sanitarias",
+            "UC": 2,
+            "Codigo": "1533804T"
+        },
+        {
+            "nombre": "Gerencia Y Control De Obras I",
+            "UC": 2,
+            "Codigo": "1543803T"
+        },
+        {
+            "nombre": "Ingeniería Sísmica",
+            "UC": 2,
+            "Codigo": "1513805T"
+        },
+        {
+            "nombre": "Proyectos Estructurales II",
+            "UC": 4,
+            "Codigo": "1516901T"
+        },
+        {
+            "nombre": "Pavimentos",
+            "UC": 3,
+            "Codigo": "1525902T"
+        },
+        {
+            "nombre": "Gerencia Y Control De Obras II",
+            "UC": 2,
+            "Codigo": "1543903T"
+        },
+        {
+            "nombre": "Patologia De Obras Civiles",
+            "UC": 2,
+            "Codigo": "1543904T"
+        },
+        {
+            "nombre": "Seminario De Investigación",
+            "UC": 2,
+            "Codigo": "1543905T"
+        },
+        {
+            "nombre": "Puentes",
+            "UC": 2,
+            "Codigo": "1513906T"
+        },
+        {
+            "nombre": "Trabajo De Aplicación Profesional (Proyecto Especial De Grado)",
+            "UC": 12,
+            "Codigo": "1500001T"
+        },
+        {
+            "nombre": "Trabajo De Aplicación Profesional (Pasantías Profesional)",
+            "UC": 12,
+            "Codigo": "1500002T"
+        }
+    ],
+    "Ingeniería Industrial": [
+        {
+            "nombre": "Introducción a la Ingeniería Industrial",
+            "UC": 1,
+            "Codigo": "0112101T"
+        },
+        {
+            "nombre": "Computación I",
+            "UC": 3,
+            "Codigo": "0415102T"
+        },
+        {
+            "nombre": "Dibujo I",
+            "UC": 3,
+            "Codigo": "0644103T"
+        },
+        {
+            "nombre": "Matemática I",
+            "UC": 4,
+            "Codigo": "0826101T"
+        },
+        {
+            "nombre": "Efectividad Personal",
+            "UC": 1,
+            "Codigo": "1032109T"
+        },
+        {
+            "nombre": "Lenguaje y Comunicación",
+            "UC": 2,
+            "Codigo": "1033101T"
+        },
+        {
+            "nombre": "Matemática II",
+            "UC": 4,
+            "Codigo": "0826201T"
+        },
+        {
+            "nombre": "Laboratorio de Física I",
+            "UC": 1,
+            "Codigo": "0842204L"
+        },
+        {
+            "nombre": "Física I",
+            "UC": 4,
+            "Codigo": "0846203T"
+        },
+        {
+            "nombre": "Laboratorio de Química General I",
+            "UC": 1,
+            "Codigo": "0912202L"
+        },
+        {
+            "nombre": "Química General I",
+            "UC": 3,
+            "Codigo": "0914201T"
+        },
+        {
+            "nombre": "Inglés I",
+            "UC": 2,
+            "Codigo": "1023202T"
+        },
+        {
+            "nombre": "Ciencia y Sociedad I",
+            "UC": 1,
+            "Codigo": "1032201T"
+        },
+        {
+            "nombre": "Mecánica I",
+            "UC": 3,
+            "Codigo": "0615301T"
+        },
+        {
+            "nombre": "Dibujo de Elementos de Máquina",
+            "UC": 3,
+            "Codigo": "0644302T"
+        },
+        {
+            "nombre": "Matemática III",
+            "UC": 4,
+            "Codigo": "0826301T"
+        },
+        {
+            "nombre": "Laboratorio de Física II",
+            "UC": 1,
+            "Codigo": "0842303L"
+        },
+        {
+            "nombre": "Física II",
+            "UC": 4,
+            "Codigo": "0846302T"
+        },
+        {
+            "nombre": "Inglés II",
+            "UC": 2,
+            "Codigo": "1023302T"
+        },
+        {
+            "nombre": "Necesidades, Valores y Proyecto de Vida",
+            "UC": 1,
+            "Codigo": "1032301T"
+        },
+        {
+            "nombre": "Procesos Industriales",
+            "UC": 2,
+            "Codigo": "0113401T"
+        },
+        {
+            "nombre": "Termodinámica I",
+            "UC": 4,
+            "Codigo": "0626401T"
+        },
+        {
+            "nombre": "Ciencia de los Materiales",
+            "UC": 3,
+            "Codigo": "0634403T"
+        },
+        {
+            "nombre": "Matemática IV",
+            "UC": 4,
+            "Codigo": "0826401T"
+        },
+        {
+            "nombre": "Economía",
+            "UC": 2,
+            "Codigo": "1013401T"
+        },
+        {
+            "nombre": "Ecología y Contaminación Ambiental",
+            "UC": 2,
+            "Codigo": "1123403T"
+        },
+        {
+            "nombre": "Laboratorio Ingeniería Eléctrica",
+            "UC": 1,
+            "Codigo": "0213508L"
+        },
+        {
+            "nombre": "Ingeniería Eléctrica",
+            "UC": 3,
+            "Codigo": "0213507T"
+        },
+        {
+            "nombre": "Laboratorio de Mecánica de Fluidos",
+            "UC": 1,
+            "Codigo": "0622502L"
+        },
+        {
+            "nombre": "Mecánica de Fluidos",
+            "UC": 3,
+            "Codigo": "0624604T"
+        },
+        {
+            "nombre": "Laboratorio Procesos Metalmecánicos",
+            "UC": 1,
+            "Codigo": "0632511L"
+        },
+        {
+            "nombre": "Laboratorio de Ciencia de los Materiales",
+            "UC": 1,
+            "Codigo": "0633504L"
+        },
+        {
+            "nombre": "Procesos Metalmecánicos",
+            "UC": 3,
+            "Codigo": "0634509T"
+        },
+        {
+            "nombre": "Estadística I",
+            "UC": 3,
+            "Codigo": "0834405T"
+        },
+        {
+            "nombre": "Laboratorio Ingeniería de Métodos I",
+            "UC": 1,
+            "Codigo": "0112603L"
+        },
+        {
+            "nombre": "Ingeniería de Métodos I",
+            "UC": 2,
+            "Codigo": "0113602T"
+        },
+        {
+            "nombre": "Organización",
+            "UC": 3,
+            "Codigo": "0124601T"
+        },
+        {
+            "nombre": "Sistemas y Procedimientos",
+            "UC": 3,
+            "Codigo": "0124613T"
+        },
+        {
+            "nombre": "Contabilidad Gerencial I",
+            "UC": 3,
+            "Codigo": "0134604T"
+        },
+        {
+            "nombre": "Estadística II",
+            "UC": 3,
+            "Codigo": "0834501T"
+        },
+        {
+            "nombre": "Legislación, Valores y Proyectos de País",
+            "UC": 1,
+            "Codigo": "1032601T"
+        },
+        {
+            "nombre": "Electiva I",
+            "UC": 2,
+            "Codigo": "ELECTIVA_I"
+        },
+        {
+            "nombre": "Seminario de Servicio Comunitario",
+            "UC": 0,
+            "Codigo": "SEMINARIO_SERVICIO_COMUNITARIO"
+        },
+        {
+            "nombre": "Laboratorio Ingeniería de Métodos II",
+            "UC": 1,
+            "Codigo": "0112706L"
+        },
+        {
+            "nombre": "Ingeniería de Métodos II",
+            "UC": 2,
+            "Codigo": "0113705T"
+        },
+        {
+            "nombre": "Seguridad e Higiene Industrial",
+            "UC": 3,
+            "Codigo": "0114703T"
+        },
+        {
+            "nombre": "Mercadotecnia",
+            "UC": 3,
+            "Codigo": "0124702T"
+        },
+        {
+            "nombre": "Administración de Personal",
+            "UC": 3,
+            "Codigo": "0124704T"
+        },
+        {
+            "nombre": "Contabilidad Gerencial II",
+            "UC": 3,
+            "Codigo": "0134707T"
+        },
+        {
+            "nombre": "Investigación de Operaciones I",
+            "UC": 4,
+            "Codigo": "0135701T"
+        },
+        {
+            "nombre": "Control de Calidad",
+            "UC": 3,
+            "Codigo": "0114803T"
+        },
+        {
+            "nombre": "Diseño de Plantas Industriales",
+            "UC": 3,
+            "Codigo": "0114807T"
+        },
+        {
+            "nombre": "Comportamiento Organizacional",
+            "UC": 3,
+            "Codigo": "0124804T"
+        },
+        {
+            "nombre": "Gerencia",
+            "UC": 3,
+            "Codigo": "0124806T"
+        },
+        {
+            "nombre": "Ingeniería Económica",
+            "UC": 3,
+            "Codigo": "0134805T"
+        },
+        {
+            "nombre": "Investigación de Operaciones II",
+            "UC": 4,
+            "Codigo": "0135802T"
+        },
+        {
+            "nombre": "Mantenimiento Industrial",
+            "UC": 3,
+            "Codigo": "0114905T"
+        },
+        {
+            "nombre": "Medición y Mejoramiento de la Productividad",
+            "UC": 3,
+            "Codigo": "0114904T"
+        },
+        {
+            "nombre": "Investigación y Desarrollo de Productos",
+            "UC": 3,
+            "Codigo": "0124903T"
+        },
+        {
+            "nombre": "Simulación",
+            "UC": 3,
+            "Codigo": "0134901T"
+        },
+        {
+            "nombre": "Formulación y Evaluación de Proyectos",
+            "UC": 3,
+            "Codigo": "0114902T"
+        },
+        {
+            "nombre": "Administración de la Producción",
+            "UC": 3,
+            "Codigo": "0114906T"
+        },
+        {
+            "nombre": "Electiva II",
+            "UC": 2,
+            "Codigo": "ELECTIVA_II"
+        },
+        {
+            "nombre": "Trabajo de Aplicación Profesional",
+            "UC": 12,
+            "Codigo": "0600001/2"
+        }
+    ],
+    "Ingeniería Mecánica": [
+        {
+            "nombre": "Matemática I",
+            "UC": 4,
+            "Codigo": "0826101T"
+        },
+        {
+            "nombre": "Dibujo",
+            "UC": 3,
+            "Codigo": "0644103T"
+        },
+        {
+            "nombre": "Computación I",
+            "UC": 3,
+            "Codigo": "0415102T"
+        },
+        {
+            "nombre": "Introducción a la Ingeniería Mecánica",
+            "UC": 1,
+            "Codigo": "0642101T"
+        },
+        {
+            "nombre": "Lenguaje y Comunicación",
+            "UC": 2,
+            "Codigo": "1033101T"
+        },
+        {
+            "nombre": "Efectividad Personal",
+            "UC": 1,
+            "Codigo": "1032109T"
+        },
+        {
+            "nombre": "Ciencia y Sociedad I",
+            "UC": 1,
+            "Codigo": "1032201T"
+        },
+        {
+            "nombre": "Matemática II",
+            "UC": 4,
+            "Codigo": "0826201T"
+        },
+        {
+            "nombre": "Química General I",
+            "UC": 3,
+            "Codigo": "0914201T"
+        },
+        {
+            "nombre": "Laboratorio de Química General I",
+            "UC": 1,
+            "Codigo": "0912202L"
+        },
+        {
+            "nombre": "Física I",
+            "UC": 4,
+            "Codigo": "0846203T"
+        },
+        {
+            "nombre": "Laboratorio Física I",
+            "UC": 1,
+            "Codigo": "0842204L"
+        },
+        {
+            "nombre": "Computación II",
+            "UC": 3,
+            "Codigo": "0415201T"
+        },
+        {
+            "nombre": "Matemática III",
+            "UC": 4,
+            "Codigo": "0826301T"
+        },
+        {
+            "nombre": "Dibujo de Elementos de Máquinas",
+            "UC": 3,
+            "Codigo": "0644302T"
+        },
+        {
+            "nombre": "Química General II",
+            "UC": 3,
+            "Codigo": "0924301T"
+        },
+        {
+            "nombre": "Laboratorio de Química General II",
+            "UC": 1,
+            "Codigo": "0922302L"
+        },
+        {
+            "nombre": "Física II",
+            "UC": 4,
+            "Codigo": "0846302T"
+        },
+        {
+            "nombre": "Laboratorio Física II",
+            "UC": 1,
+            "Codigo": "0842303L"
+        },
+        {
+            "nombre": "Mecánica I",
+            "UC": 3,
+            "Codigo": "0615301T"
+        },
+        {
+            "nombre": "Necesidades, Valores y Proyecto de Vida",
+            "UC": 1,
+            "Codigo": "1032301T"
+        },
+        {
+            "nombre": "Matemática IV",
+            "UC": 4,
+            "Codigo": "0826401T"
+        },
+        {
+            "nombre": "Ciencia de los Materiales I",
+            "UC": 3,
+            "Codigo": "0634403T"
+        },
+        {
+            "nombre": "Termodinámica I",
+            "UC": 4,
+            "Codigo": "0626401T"
+        },
+        {
+            "nombre": "Mecánica II",
+            "UC": 3,
+            "Codigo": "0615404T"
+        },
+        {
+            "nombre": "Inglés I",
+            "UC": 2,
+            "Codigo": "1023202T"
+        },
+        {
+            "nombre": "Probabilidades y Estadística",
+            "UC": 3,
+            "Codigo": "0834403T"
+        },
+        {
+            "nombre": "Métodos Numéricos",
+            "UC": 3,
+            "Codigo": "0835502T"
+        },
+        {
+            "nombre": "Ciencia de los Materiales II",
+            "UC": 3,
+            "Codigo": "0634503T"
+        },
+        {
+            "nombre": "Laboratorio Ciencia de los Materiales",
+            "UC": 1,
+            "Codigo": "0633504L"
+        },
+        {
+            "nombre": "Termodinámica II",
+            "UC": 3,
+            "Codigo": "0624505T"
+        },
+        {
+            "nombre": "Laboratorio Termodinámica II",
+            "UC": 1,
+            "Codigo": "0622506L"
+        },
+        {
+            "nombre": "Resistencia de los Materiales",
+            "UC": 3,
+            "Codigo": "0615507T"
+        },
+        {
+            "nombre": "Laboratorio Resistencia de los Materiales",
+            "UC": 1,
+            "Codigo": "0612508L"
+        },
+        {
+            "nombre": "Economía",
+            "UC": 2,
+            "Codigo": "1013401T"
+        },
+        {
+            "nombre": "Diseño Mecánico I",
+            "UC": 3,
+            "Codigo": "0644601T"
+        },
+        {
+            "nombre": "Mecanismo",
+            "UC": 3,
+            "Codigo": ""
+        },
+        {
+            "nombre": "Procesos de Manufactura I",
+            "UC": 3,
+            "Codigo": "0634602T"
+        },
+        {
+            "nombre": "Laboratorio Procesos de Manufactura I",
+            "UC": 1,
+            "Codigo": "0633603L"
+        },
+        {
+            "nombre": "Mecánica de Fluidos",
+            "UC": 3,
+            "Codigo": "0624604T"
+        },
+        {
+            "nombre": "Laboratorio Mecánica de Fluidos",
+            "UC": 1,
+            "Codigo": "0622502L"
+        },
+        {
+            "nombre": "Ecología y Contaminación Ambiental",
+            "UC": 2,
+            "Codigo": "1123403T"
+        },
+        {
+            "nombre": "Inglés II",
+            "UC": 2,
+            "Codigo": "1023302T"
+        },
+        {
+            "nombre": "Gerencia Personal Contexto y Proyecto Organizacional",
+            "UC": 1,
+            "Codigo": "1032402T"
+        },
+        {
+            "nombre": "Diseño Mecánico II",
+            "UC": 3,
+            "Codigo": "0644701T"
+        },
+        {
+            "nombre": "Transferencia de Calor",
+            "UC": 3,
+            "Codigo": "0625702T"
+        },
+        {
+            "nombre": "Laboratorio Transferencia de Calor",
+            "UC": 1,
+            "Codigo": "0622703L"
+        },
+        {
+            "nombre": "Electrotecnia",
+            "UC": 3,
+            "Codigo": "0214707T"
+        },
+        {
+            "nombre": "Laboratorio de Electrotecnia",
+            "UC": 1,
+            "Codigo": "0213708L"
+        },
+        {
+            "nombre": "Procesos de Manufactura II",
+            "UC": 3,
+            "Codigo": "0634704T"
+        },
+        {
+            "nombre": "Laboratorio Procesos de Manufactura",
+            "UC": 1,
+            "Codigo": "0633705L"
+        },
+        {
+            "nombre": "Ciencia y Sociedad II",
+            "UC": 1,
+            "Codigo": "1032702T"
+        },
+        {
+            "nombre": "Diseño Mecánico III",
+            "UC": 3,
+            "Codigo": "0644802T"
+        },
+        {
+            "nombre": "Turbomáquinas",
+            "UC": 3,
+            "Codigo": "0624803T"
+        },
+        {
+            "nombre": "Laboratorio de Turbomáquinas",
+            "UC": 1,
+            "Codigo": "0622804L"
+        },
+        {
+            "nombre": "Metodología de la Investigación",
+            "UC": 2,
+            "Codigo": "1033801T"
+        },
+        {
+            "nombre": "Tecnología Eléctrica",
+            "UC": 2,
+            "Codigo": "0213505T"
+        },
+        {
+            "nombre": "Plantas de Potencia",
+            "UC": 3,
+            "Codigo": "0624807T"
+        },
+        {
+            "nombre": "Laboratorio Plantas de Potencia",
+            "UC": 1,
+            "Codigo": "0622808L"
+        },
+        {
+            "nombre": "Producción Industrial",
+            "UC": 2,
+            "Codigo": "0113808T"
+        },
+        {
+            "nombre": "Análisis Económico para Ingenieros",
+            "UC": 3,
+            "Codigo": "0134909T"
+        },
+        {
+            "nombre": "Administración de Personal",
+            "UC": 2,
+            "Codigo": "0123910T"
+        },
+        {
+            "nombre": "Electiva Profesional I",
+            "UC": 2,
+            "Codigo": "ELECTIVA_PROFESIONAL_I"
+        },
+        {
+            "nombre": "Electiva Profesional II",
+            "UC": 2,
+            "Codigo": "ELECTIVA_PROFESIONAL_II"
+        },
+        {
+            "nombre": "Electiva Profesional III o Complementaria I",
+            "UC": 2,
+            "Codigo": "ELECTIVA_PROFESIONAL_III"
+        },
+        {
+            "nombre": "Instrumentación y Control",
+            "UC": 1,
+            "Codigo": "0234904T"
+        },
+        {
+            "nombre": "Laboratorio Tecnología Eléctrica",
+            "UC": 1,
+            "Codigo": "0213608L"
+        },
+        {
+            "nombre": "Trabajo de Aplicación Profesional",
+            "UC": 12,
+            "Codigo": "0600001/2"
+        }
+    ],
+    "Licenciatura en Psicología": [
+        {
+            "nombre": "Introducción a la Psicología",
+            "UC": 3,
+            "Codigo": "1232"
+        },
+        {
+            "nombre": "Lenguaje y Comunicación",
+            "UC": 2,
+            "Codigo": "1033101"
+        },
+        {
+            "nombre": "Inglés I",
+            "UC": 2,
+            "Codigo": "1023202T"
+        },
+        {
+            "nombre": "Psicología General I",
+            "UC": 3,
+            "Codigo": "PSIC_GEN_I"
+        },
+        {
+            "nombre": "Estadística Aplicada a la Psicología I",
+            "UC": 3,
+            "Codigo": "ESTAD_PSIC_I"
+        },
+        {
+            "nombre": "Economía",
+            "UC": 2,
+            "Codigo": "1013401T"
+        },
+        {
+            "nombre": "Inglés II",
+            "UC": 2,
+            "Codigo": "1023302T"
+        },
+        {
+            "nombre": "Psicología General II",
+            "UC": 3,
+            "Codigo": "PSIC_GEN_II"
+        },
+        {
+            "nombre": "Bases Biológicas de la Conducta I",
+            "UC": 3,
+            "Codigo": "BASES_BIO_I"
+        },
+        {
+            "nombre": "Estadística Aplicada a la Psicología II",
+            "UC": 3,
+            "Codigo": "ESTAD_PSIC_II"
+        },
+        {
+            "nombre": "Psicología y Cultura I",
+            "UC": 2,
+            "Codigo": "PSIC_CULT_I"
+        },
+        {
+            "nombre": "Psicología General III",
+            "UC": 3,
+            "Codigo": "PSIC_GEN_III"
+        },
+        {
+            "nombre": "Bases Biológicas de la Conducta II",
+            "UC": 3,
+            "Codigo": "BASES_BIO_II"
+        },
+        {
+            "nombre": "Psicología Social I",
+            "UC": 3,
+            "Codigo": "PSIC_SOC_I"
+        },
+        {
+            "nombre": "Psicometría",
+            "UC": 3,
+            "Codigo": "PSICOMETRIA"
+        },
+        {
+            "nombre": "Psicología y Cultura II",
+            "UC": 2,
+            "Codigo": "PSIC_CULT_II"
+        },
+        {
+            "nombre": "Psicología Evolutiva I",
+            "UC": 3,
+            "Codigo": "PSIC_EVOL_I"
+        },
+        {
+            "nombre": "Psicología Social II",
+            "UC": 3,
+            "Codigo": "PSIC_SOC_II"
+        },
+        {
+            "nombre": "Metodología de la Investigación",
+            "UC": 2,
+            "Codigo": "METOD_INV"
+        },
+        {
+            "nombre": "Psicología Educativa",
+            "UC": 3,
+            "Codigo": "PSIC_EDUC"
+        },
+        {
+            "nombre": "Psicología Evolutiva II",
+            "UC": 3,
+            "Codigo": "PSIC_EVOL_II"
+        },
+        {
+            "nombre": "Psicología Social III",
+            "UC": 3,
+            "Codigo": "PSIC_SOC_III"
+        },
+        {
+            "nombre": "Métodos Cualitativos de Investigación",
+            "UC": 3,
+            "Codigo": "MET_CUALIT"
+        },
+        {
+            "nombre": "Instrumentos de Exploración Psicológica I",
+            "UC": 4,
+            "Codigo": "INST_EXPL_I"
+        },
+        {
+            "nombre": "Teorías de la Personalidad",
+            "UC": 1,
+            "Codigo": "TEOR_PERS"
+        },
+        {
+            "nombre": "Entrevista Psicológica",
+            "UC": 2,
+            "Codigo": "ENTREV_PSIC"
+        },
+        {
+            "nombre": "Psicología y Cultura III",
+            "UC": 2,
+            "Codigo": "PSIC_CULT_III"
+        },
+        {
+            "nombre": "Problemas Sociales Contemporáneos",
+            "UC": 3,
+            "Codigo": "PROB_SOC"
+        },
+        {
+            "nombre": "Psicología de la Diversidad Funcional",
+            "UC": 3,
+            "Codigo": "PSIC_DIV"
+        },
+        {
+            "nombre": "Instrumentos de Exploración Psicológica II",
+            "UC": 3,
+            "Codigo": "INST_EXPL_II"
+        },
+        {
+            "nombre": "Psicología de las Organizaciones",
+            "UC": 3,
+            "Codigo": "PSIC_ORG"
+        },
+        {
+            "nombre": "Psicopatología",
+            "UC": 4,
+            "Codigo": "PSICOPAT"
+        },
+        {
+            "nombre": "Psicología y Cultura IV",
+            "UC": 2,
+            "Codigo": "PSIC_CULT_IV"
+        },
+        {
+            "nombre": "Psicología Ambiental",
+            "UC": 2,
+            "Codigo": "PSIC_AMB"
+        },
+        {
+            "nombre": "Psicología y Educación",
+            "UC": 3,
+            "Codigo": "PSIC_EDUC_II"
+        },
+        {
+            "nombre": "Dinámica de Grupo I",
+            "UC": 1,
+            "Codigo": "DIN_GRUPO_I"
+        },
+        {
+            "nombre": "Psicología Clínica I",
+            "UC": 3,
+            "Codigo": "PSIC_CLIN_I"
+        },
+        {
+            "nombre": "Electiva I",
+            "UC": 2,
+            "Codigo": "ELECTIVA_I"
+        },
+        {
+            "nombre": "Grandes Preguntas de la Filosofía",
+            "UC": 2,
+            "Codigo": "FILOSOFIA"
+        },
+        {
+            "nombre": "Dinámica de Grupo II",
+            "UC": 2,
+            "Codigo": "DIN_GRUPO_II"
+        },
+        {
+            "nombre": "Psicoterapia I",
+            "UC": 3,
+            "Codigo": "PSICOTER_I"
+        },
+        {
+            "nombre": "Psicología Clínica II",
+            "UC": 3,
+            "Codigo": "PSIC_CLIN_II"
+        },
+        {
+            "nombre": "Prácticas Profesionales I",
+            "UC": 4,
+            "Codigo": "PRACT_PRO_I"
+        },
+        {
+            "nombre": "Psicología y Arte",
+            "UC": 1,
+            "Codigo": "PSIC_ARTE"
+        },
+        {
+            "nombre": "Psicoterapia II",
+            "UC": 3,
+            "Codigo": "PSICOTER_II"
+        },
+        {
+            "nombre": "Psicología Clínica III",
+            "UC": 3,
+            "Codigo": "PSIC_CLIN_III"
+        },
+        {
+            "nombre": "Prácticas Profesionales II",
+            "UC": 3,
+            "Codigo": "PRACT_PRO_II"
+        },
+        {
+            "nombre": "Electiva II",
+            "UC": 2,
+            "Codigo": "ELECTIVA_II"
+        },
+        {
+            "nombre": "Trabajo de Aplicación Profesional (T.A.P.)",
+            "UC": 12,
+            "Codigo": "TAP"
+        }
+    ],
+    "Ingeniería Agronómica": [
+        {
+            "nombre": "Introducción a la Ingeniería Agronómica",
+            "UC": 2,
+            "Codigo": "0533105T"
+        },
+        {
+            "nombre": "Lenguaje y Comunicación",
+            "UC": 2,
+            "Codigo": "1023111T"
+        },
+        {
+            "nombre": "Efectividad Personal",
+            "UC": 1,
+            "Codigo": "1032109T"
+        },
+        {
+            "nombre": "Computación Aplicada",
+            "UC": 2,
+            "Codigo": "0413104T"
+        },
+        {
+            "nombre": "Matemática I",
+            "UC": 4,
+            "Codigo": "0826101T"
+        },
+        {
+            "nombre": "Química General I",
+            "UC": 3,
+            "Codigo": "0914201T"
+        },
+        {
+            "nombre": "Laboratorio Química General I",
+            "UC": 1,
+            "Codigo": "0912202L"
+        },
+        {
+            "nombre": "Química General II",
+            "UC": 3,
+            "Codigo": "0924301T"
+        },
+        {
+            "nombre": "Laboratorio Química General II",
+            "UC": 1,
+            "Codigo": "0922302L"
+        },
+        {
+            "nombre": "Inglés I",
+            "UC": 2,
+            "Codigo": "1023202T"
+        },
+        {
+            "nombre": "Matemática II",
+            "UC": 4,
+            "Codigo": "0826201T"
+        },
+        {
+            "nombre": "Botánica Agrícola",
+            "UC": 4,
+            "Codigo": "0516102T"
+        },
+        {
+            "nombre": "Ciencia y Sociedad I",
+            "UC": 1,
+            "Codigo": "1012207T"
+        },
+        {
+            "nombre": "Química Orgánica",
+            "UC": 3,
+            "Codigo": "0923401T"
+        },
+        {
+            "nombre": "Laboratorio Química Orgánica",
+            "UC": 1,
+            "Codigo": "0923402L"
+        },
+        {
+            "nombre": "Necesidad, Valores y Proyecto de Vida",
+            "UC": 1,
+            "Codigo": "1032301T"
+        },
+        {
+            "nombre": "Física I",
+            "UC": 4,
+            "Codigo": "0846203T"
+        },
+        {
+            "nombre": "Laboratorio Física I",
+            "UC": 1,
+            "Codigo": "0842204L"
+        },
+        {
+            "nombre": "Agroecología",
+            "UC": 3,
+            "Codigo": "0516202T"
+        },
+        {
+            "nombre": "Inglés II",
+            "UC": 2,
+            "Codigo": "1023302T"
+        },
+        {
+            "nombre": "Bioquímica",
+            "UC": 3,
+            "Codigo": "0924501T"
+        },
+        {
+            "nombre": "Laboratorio Bioquímica",
+            "UC": 1,
+            "Codigo": "0923502L"
+        },
+        {
+            "nombre": "Estadística",
+            "UC": 3,
+            "Codigo": "0834402T"
+        },
+        {
+            "nombre": "Economía",
+            "UC": 2,
+            "Codigo": "1013401T"
+        },
+        {
+            "nombre": "Enfoque Sistémico",
+            "UC": 2,
+            "Codigo": "0543401T"
+        },
+        {
+            "nombre": "Gerencia Personal, Contexto y Proyecto Organizacional",
+            "UC": 1,
+            "Codigo": "1032402T"
+        },
+        {
+            "nombre": "Suelos",
+            "UC": 4,
+            "Codigo": "0524402T"
+        },
+        {
+            "nombre": "Entomología General",
+            "UC": 3,
+            "Codigo": "0516501T"
+        },
+        {
+            "nombre": "Manejo de Suelos y Fertilidad",
+            "UC": 3,
+            "Codigo": "0313504T"
+        },
+        {
+            "nombre": "Electiva",
+            "UC": 2,
+            "Codigo": "ELECTIVA_V"
+        },
+        {
+            "nombre": "Fisiología Vegetal",
+            "UC": 4,
+            "Codigo": "0516502T"
+        },
+        {
+            "nombre": "Genética",
+            "UC": 4,
+            "Codigo": "0525601T"
+        },
+        {
+            "nombre": "Laboratorio Genética",
+            "UC": 1,
+            "Codigo": "0525304T"
+        },
+        {
+            "nombre": "Fundamentos de Fitopatología",
+            "UC": 4,
+            "Codigo": "0523606T"
+        },
+        {
+            "nombre": "Fundamentos de Hidráulica",
+            "UC": 3,
+            "Codigo": "0523605T"
+        },
+        {
+            "nombre": "Topografía",
+            "UC": 3,
+            "Codigo": "0525602T"
+        },
+        {
+            "nombre": "Construcciones Rurales",
+            "UC": 2,
+            "Codigo": "0513603T"
+        },
+        {
+            "nombre": "Conservación de Suelos y Aguas",
+            "UC": 3,
+            "Codigo": "0523604T"
+        },
+        {
+            "nombre": "Sistemas de Representación Gráfica",
+            "UC": 2,
+            "Codigo": "0413104T"
+        },
+        {
+            "nombre": "Proyecto Integrador de Ingeniería",
+            "UC": 3,
+            "Codigo": "PROY_INT_ING"
+        },
+        {
+            "nombre": "Biotecnología Agrícola",
+            "UC": 2,
+            "Codigo": "0525304T"
+        },
+        {
+            "nombre": "Riego y Drenaje",
+            "UC": 3,
+            "Codigo": "0525701T"
+        },
+        {
+            "nombre": "Mecanización Agrícola",
+            "UC": 3,
+            "Codigo": "0525702T"
+        },
+        {
+            "nombre": "Manejo de Arvenses I",
+            "UC": 2,
+            "Codigo": "0533707T"
+        },
+        {
+            "nombre": "Manejo de Enfermedades I",
+            "UC": 2,
+            "Codigo": "0533709T"
+        },
+        {
+            "nombre": "Manejo de Plagas I",
+            "UC": 2,
+            "Codigo": "0533708T"
+        },
+        {
+            "nombre": "Cultivos de Ciclo Corto",
+            "UC": 4,
+            "Codigo": "0536711T"
+        },
+        {
+            "nombre": "Proyecto Integrador de Producción de Anuales",
+            "UC": 3,
+            "Codigo": "0535710T"
+        },
+        {
+            "nombre": "Manejo de Arvenses II",
+            "UC": 1,
+            "Codigo": "0532815T"
+        },
+        {
+            "nombre": "Manejo de Enfermedades II",
+            "UC": 1,
+            "Codigo": "0532817T"
+        },
+        {
+            "nombre": "Manejo de Plagas II",
+            "UC": 1,
+            "Codigo": "0532816T"
+        },
+        {
+            "nombre": "Café y Cacao",
+            "UC": 3,
+            "Codigo": "0535803T"
+        },
+        {
+            "nombre": "Fruticultura",
+            "UC": 3,
+            "Codigo": "0534804T"
+        },
+        {
+            "nombre": "Caña y Palma",
+            "UC": 3,
+            "Codigo": "0534805T"
+        },
+        {
+            "nombre": "Proyecto Integrador de Producción de Perennes",
+            "UC": 3,
+            "Codigo": "0533806T"
+        },
+        {
+            "nombre": "Forrajicultura",
+            "UC": 2,
+            "Codigo": "0533807T"
+        },
+        {
+            "nombre": "Laboratorio de Forrajicultura",
+            "UC": 1,
+            "Codigo": "0532809L"
+        },
+        {
+            "nombre": "Metodología de la Investigación",
+            "UC": 2,
+            "Codigo": "1013308T"
+        },
+        {
+            "nombre": "Mejoramiento y Producción de Semillas",
+            "UC": 3,
+            "Codigo": "0545902T"
+        },
+        {
+            "nombre": "Desarrollo Rural Sostenible",
+            "UC": 3,
+            "Codigo": "0423812T"
+        },
+        {
+            "nombre": "Legislación, Valores Nacionales y Proyecto de País",
+            "UC": 1,
+            "Codigo": "1032601T"
+        },
+        {
+            "nombre": "Proyecto Integrador de Desarrollo Rural",
+            "UC": 3,
+            "Codigo": "0544903T"
+        },
+        {
+            "nombre": "Formación y Gerencia de Empresas",
+            "UC": 3,
+            "Codigo": "0545905T"
+        },
+        {
+            "nombre": "Diseño de Experimentos",
+            "UC": 2,
+            "Codigo": "0523508T"
+        },
+        {
+            "nombre": "Electiva",
+            "UC": 2,
+            "Codigo": "ELECTIVA_IX"
+        },
+        {
+            "nombre": "Trabajo de Aplicación Profesional Proyecto Especial de grado",
+            "UC": 12,
+            "Codigo": "0500001T"
+        },
+        {
+            "nombre": "Trabajo de Aplicación Profesional Pasantías",
+            "UC": 12,
+            "Codigo": "0500002T"
+        }
+    ]
+}
